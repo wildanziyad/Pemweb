@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Menghitung Jumlah  dua bilangan </title>
+</head>
+<body>
+    <h1>Meghitung jumlah Dua bilangan</h1>
+    <div>
+        <input type="number" id="bil1" onchange="penambahan( )" />
+        <p>+</p>
+        <input type="number"  id="bil2" onchange="penambahan()" />
+    </div> 
+    <P>=</P>
+    <p id="hasil"></p>
+
+    <script>
+        function penambahan(){
+            let a1 =document.getElementById("bil1").value;
+            let a2 =document.getElementById("bil2").value;
+
+
+            let hasil = parseInt(a1) + parseInt(a2)
+            document.getElementById("hasil").innerHTML= hasil;
+        }
+    </script>
+</body>
+</html>

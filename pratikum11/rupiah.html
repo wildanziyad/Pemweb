@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rupiah</title>
+</head>
+<body>
+    <div>
+        <h2>konversi Rupiah Ke dollar </h2>
+        <label for="rupiah">Rupiah :</label>
+        <input type="text" id="rupiah" name="rupiah" />
+        <button onclick="rupiahDollar()">konversi</button>
+    </div>
+
+<!-- <p id= "dollar"></p>-->
+
+<hr>
+
+<p>Dollar : <span id="dollar"></span></p>
+    <div>
+        <h2>konversi Dolar ke Rupiah</h2>
+        <label for="dollar"> Dollar :</label>
+        <input type="text" id="dollar-input" name="dollar" />
+        <button onclick="dollarkonversi()">Konversi</button><br/>
+    </div>
+
+<!-- <p id= "rupiah-hasil"></p>-->
+
+<hr>
+
+<p>Rupiah: <span id="dollar" id="dollar-input" name="rupaih"></span></p>
+<script>
+    function rupiahDollar() {
+        let rupaih =document.getElementsByid("rupiah").value;
+        let dollar = rupiah / 14650 ;
+        document.getElementById("dollar").innerHTML = dollar;
+    }
+
+
+    function dollarToRupiah() {
+        let dollar=document.getElementsByid("dollar-input").value;
+        let rupiah = dollar / 14650 ;
+        document.getElementById("rupiah-hasil").innerHTML = rupiah;
+    }
+    
+</script>
+
+
+</body>
+</html>
